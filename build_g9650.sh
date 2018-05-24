@@ -11,7 +11,7 @@ BUILDING_DIR=$OUT_DIR/kernel_obj
 
 JOB_NUMBER=`grep processor /proc/cpuinfo|wc -l`
 
-CROSS_COMPILER=$ROOT_DIR/lazy-prebuilt/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+CROSS_COMPILER=$ROOT_DIR/lazy-prebuilt/aarch64-linux-android-4.9/bin/aarch64-linux-android- KCFLAGS=-mno-android
 
 DTBTOOL=$ROOT_DIR/tools/dtbTool
 DTS_DIR=$BUILDING_DIR/arch/arm64/boot/dts

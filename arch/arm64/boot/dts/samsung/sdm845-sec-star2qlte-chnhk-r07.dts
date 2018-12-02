@@ -25385,7 +25385,7 @@
 					dev = "/dev/block/platform/soc/1d84000.ufshc/by-name/vendor";
 					type = "ext4";
 					mnt_flags = "ro,barrier=1,discard";
-					fsmgr_flags = "wait,verify";
+					fsmgr_flags = "wait";
 				};
 
 				odm {
@@ -25393,7 +25393,7 @@
 					dev = "/dev/block/platform/soc/1d84000.ufshc/by-name/odm";
 					type = "ext4";
 					mnt_flags = "ro,errors=panic";
-					fsmgr_flags = "wait,verify";
+					fsmgr_flags = "wait";
 				};
 
 				system {
@@ -25401,7 +25401,7 @@
 					dev = "/dev/block/platform/soc/1d84000.ufshc/by-name/system";
 					type = "ext4";
 					mnt_flags = "ro,errors=panic";
-					fsmgr_flags = "wait,verify";
+					fsmgr_flags = "wait";
 				};
 			};
 		};
